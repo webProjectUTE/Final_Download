@@ -25,9 +25,9 @@ public class DownloadServlet extends HttpServlet {
         }
 
         // perform action and set URL to appropriate page
-        String url = "/index.jsp";
+        String url = "/download.jsp";
         if (action.equals("viewAlbums")) {
-            url = "/index.jsp";
+            url = "/download.jsp";
         } else if (action.equals("checkUser")) {
             url = checkUser(request, response);
         } else if (action.equals("viewCookies")) {
@@ -53,7 +53,7 @@ public class DownloadServlet extends HttpServlet {
         String email = request.getParameter("email");
         
         // perform action and set URL to appropriate page
-        String url = "/index.jsp";
+        String url = "/download.jsp";
         if (action.equals("registerUser")) {
         	String message;
             if (firstName == null || lastName == null || email == null ||
